@@ -79,17 +79,20 @@ O Android Studio sincroniza automaticamente, mas caso precise:
 
 ---
 
-# 🌐 Endpoints da API
+# 🌐 Explicação da API
 
-### 👇 Endpoints
+### 👇 ViaCEP
 
-| Método | Rota | Descrição |
-|--------|-------|-------------|
-| **GET** | `/alunos` | Retorna todos os alunos |
-| **GET** | `/alunos/{id}` | Busca um aluno específico |
-| **POST** | `/alunos` | Cadastra um novo aluno |
-| **PUT** | `/alunos/{id}` | Atualiza os dados de um aluno |
-| **DELETE** | `/alunos/{id}` | Remove um aluno |
+- A API ViaCEP é um serviço público e gratuito que permite consultar informações de endereços brasileiros usando apenas um CEP ou parte de um endereço. Ela funciona por meio de requisições HTTP simples, sem necessidade de autenticação ou chave de API.
+
+- Quando você faz uma requisição informando um CEP, a API retorna um conjunto de dados relacionados àquele endereço. Esses dados geralmente incluem logradouro (rua), bairro, cidade, estado, código IBGE, DDD e outras informações úteis. A API pode responder em diferentes formatos, como JSON, XML e outros formatos alternativos, mas o JSON é o mais usado.
+
+- O funcionamento básico ocorre da seguinte forma: você envia um CEP para o endpoint da API no formato /ws/{CEP}/json/. A API então busca esse CEP em sua base de dados e devolve as informações correspondentes. Caso o CEP pesquisado não exista, ela retorna um campo indicando erro.
+
+- Além da consulta direta por CEP, também é possível fazer buscas utilizando UF (estado), cidade e nome do logradouro. Nesse caso, a API retorna uma lista de endereços possíveis que correspondem aos termos informados.
+
+- Por ser um serviço simples, rápido e sem limite rígido de uso, a API é amplamente utilizada em sistemas de cadastro, formulários automáticos e validação de endereços em geral.
+
 
 ---
 
