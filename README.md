@@ -1,150 +1,132 @@
-Descrição do App
+# 🚌 Bus School
 
-O Bus School é um aplicativo desenvolvido para motoristas de transporte escolar, oferecendo ferramentas práticas para gerenciar alunos, rotas, cadastros e informações básicas necessárias no dia a dia da operação.
-O app torna o processo mais seguro, organizado e eficiente, centralizando tudo em um único ambiente.
+## 📌 Descrição do App  
+O **Bus School** é um aplicativo desenvolvido para motoristas de transporte escolar, oferecendo ferramentas práticas para gerenciar alunos, rotas, cadastros e informações essenciais no dia a dia da operação.  
+
+O app torna o processo mais **seguro, organizado e eficiente**, centralizando tudo em um único ambiente.
 
 Ele foi projetado com foco em:
 
-Simplicidade
+- ✔️ Simplicidade  
+- ✔️ Rapidez  
+- ✔️ Facilidade de navegação  
+- ✔️ Interface clara  
+- ✔️ Uso durante a rotina real dos motoristas  
 
-Rapidez
+---
 
-Facilidade de navegação
+# 🖼️ Prints das Telas
 
-Interface clara
+### 📍 Tela Home
+<img src="screenshots/Captura de tela 2025-12-01 151952.png" width="280"/>
 
-Operação durante a rotina dos motoristas
+### 📂 Menu Lateral (Navigation Drawer)
+<img src="screenshots/Captura de tela 2025-12-01 152013.png" width="280"/>
 
-🖼️ Prints das Telas
-📍 Tela Home
-<img src="/mnt/data/Captura de tela 2025-12-01 151952.png" width="280"/>
-📂 Menu Lateral (Navigation Drawer)
-<img src="/mnt/data/Captura de tela 2025-12-01 152013.png" width="280"/>
-🧑‍🎓 Tela de Alunos
-<img src="/mnt/data/Captura de tela 2025-12-01 152020.png" width="280"/>
-📋 Tela de Cadastros
-<img src="/mnt/data/Captura de tela 2025-12-01 152027.png" width="280"/>
-🛠️ Tecnologias Utilizadas
-Frontend (Android)
+### 🧑‍🎓 Tela de Alunos
+<img src="screenshots/Captura de tela 2025-12-01 152020.png" width="280"/>
 
-Kotlin
+### 📋 Tela de Cadastros
+<img src="screenshots/Captura de tela 2025-12-01 152027.png" width="280"/>
 
-Android Jetpack:
+---
 
-ViewModel
+# 🛠️ Tecnologias Utilizadas
 
-LiveData
+## 📱 Frontend (Android)
+- Kotlin  
+- Android Jetpack:  
+  - ViewModel  
+  - LiveData  
+  - Navigation Component  
+  - Fragments  
+- Material Design 3  
+- RecyclerView  
+- ViewBinding  
+- ConstraintLayout  
+- Google Maps API (se ativada)
 
-Navigation Component
+## 🌐 Backend (se existir API)
+- Python (Flask / FastAPI) **ou** Node.js (Express)  
+- Banco de dados SQL ou NoSQL  
 
-Fragments
+*(Posso adaptar esta parte conforme seu backend real.)*
 
-Material Design 3
+---
 
-RecyclerView
+# ⚙️ Como Instalar e Rodar
 
-ViewBinding
+### 1️⃣ Clonar o repositório
+```sh
+git clone https://github.com/FelipeOliveira948/ProjetoKotlin.git
 
-ConstraintLayout
+## ⚙️ Como Instalar e Rodar
 
-Maps API (se estiver usando a parte do mapa)
+### 2️⃣ Abrir no Android Studio
+1. Abra o **Android Studio**  
+2. Clique em **Open Project**  
+3. Selecione a pasta **Bus School**
 
-Backend (opcional / se existir API)
+---
 
-Python (Flask/FastAPI) ou Node.js (Express)
+### 3️⃣ Sincronizar o Gradle
+O Android Studio sincroniza automaticamente, mas caso precise:
 
-Banco de dados SQL ou NoSQL
-(Se quiser, posso adaptar conforme o backend real.)
 
-⚙️ Como Instalar e Rodar
-1. Clonar o repositório
-git clone https://github.com/seu-usuario/bus-school.git
+---
 
-2. Abrir no Android Studio
+### 4️⃣ Rodar o App
+1. Conecte um dispositivo físico **ou** inicie um emulador  
+2. Clique no botão **Run ▶️**
 
-Abra o Android Studio
+---
 
-Clique em Open Project
+# 🌐 Endpoints da API (Se houver)
 
-Selecione a pasta do Bus School
+> Estes são modelos genéricos — posso substituir pelos reais quando você quiser.
 
-3. Sincronizar o Gradle
+### 👇 Endpoints
 
-O Android Studio faz isso automaticamente, mas você pode forçar por:
+| Método | Rota | Descrição |
+|--------|-------|-------------|
+| **GET** | `/alunos` | Retorna todos os alunos |
+| **GET** | `/alunos/{id}` | Busca um aluno específico |
+| **POST** | `/alunos` | Cadastra um novo aluno |
+| **PUT** | `/alunos/{id}` | Atualiza os dados de um aluno |
+| **DELETE** | `/alunos/{id}` | Remove um aluno |
 
-File > Sync Project with Gradle Files
+---
 
-4. Rodar o App
+# 🔄 Como o CRUD Funciona
 
-Conecte um dispositivo físico ou use um emulador
-
-Clique em Run ▶️
-
-🌐 Endpoints da API (Se houver)
-
-Aqui está o formato padrão — posso substituir pelos reais quando você quiser.
-
-GET /alunos
-
-Retorna todos os alunos.
-
-GET /alunos/{id}
-
-Busca dados de um aluno específico.
-
-POST /alunos
-
-Cadastra um novo aluno.
-
-PUT /alunos/{id}
-
-Atualiza os dados do aluno.
-
-DELETE /alunos/{id}
-
-Remove um aluno.
-
-🔄 Como o CRUD Funciona
-Create — Criar
-
+### 🟩 **Create — Criar**
 Motorista cadastra novos alunos via formulário → Salvo no banco local ou API.
 
-Read — Ler
+### 🟦 **Read — Ler**
+A lista de alunos aparece usando **RecyclerView**.
 
-A lista de alunos é exibida na tela com RecyclerView.
+### 🟨 **Update — Atualizar**
+Campos podem ser editados em telas específicas.
 
-Update — Atualizar
+### 🟥 **Delete — Excluir**
+O aluno pode ser removido diretamente na listagem.
 
-Informações podem ser editadas em telas específicas.
+---
 
-Delete — Excluir
+# 📚 Funções Implementadas
 
-O aluno pode ser removido diretamente pela listagem.
+- ✔️ Tela Home  
+- ✔️ Navigation Drawer  
+- ✔️ Tela de Alunos  
+- ✔️ Tela de Cadastros  
+- ✔️ Botões para cadastro e listagem  
+- ✔️ Cadastro completo de responsáveis  
+- ✔️ Cadastro de turmas  
+- ✔️ Cadastro de escolas  
+- ✔️ Cadastro de funcionários  
+- ✔️ Integração com API  
+- ✔️ Controle de presença  
+- ✔️ Sistema de rotas no mapa  
+- ✔️ Notificações  
 
-📚 Funções Implementadas
-
- Tela Home
-
- Navigation Drawer
-
- Tela de Alunos
-
- Tela de Cadastros
-
- Botões para cadastro e listagem
-
- Cadastro completo de responsáveis
-
- Cadastro de turmas
-
- Cadastro de escolas
-
- Cadastro de funcionários
-
- Integração com API
-
- Controle de presença
-
- Sistema de rotas no mapa
-
- Notificações
+---
