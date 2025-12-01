@@ -57,7 +57,7 @@ Ele foi projetado com foco em:
 # ⚙️ Como Instalar e Rodar
 
 ### 1️⃣ Clonar o repositório
-```sh
+
 git clone https://github.com/FelipeOliveira948/ProjetoKotlin.git
 
 ## ⚙️ Como Instalar e Rodar
