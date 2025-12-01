@@ -126,3 +126,13 @@ O aluno pode ser removido diretamente na listagem.
 - ✔️ Notificações  
 
 ---
+
+# 👨‍💻 Autores
+
+| Nome | RA | Contato |
+|------|------|---------|
+| **Felipe Oliveira** | 2404017 | felipe.alcantara@aluno.faculdadeimpacta.com.br |
+| **Leonardo Cirino** | 2202296 | leonardo.cirino@aluno.faculdadeimpacta.com.br |
+| **Rafael Ferracini** | 2403329 | rafael.ferracini@aluno.faculdadeimpacta.com.br |
+| **Gustavo Bezerra** | 2403495 | gustavo.bezerra@aluno.faculdadeimpacta.com.br |
+
