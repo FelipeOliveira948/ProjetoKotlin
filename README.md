@@ -50,8 +50,6 @@ Ele foi projetado com foco em:
 - Python (Flask / FastAPI) **ou** Node.js (Express)  
 - Banco de dados SQL ou NoSQL  
 
-*(Posso adaptar esta parte conforme seu backend real.)*
-
 ---
 
 # ⚙️ Como Instalar e Rodar
@@ -81,9 +79,7 @@ O Android Studio sincroniza automaticamente, mas caso precise:
 
 ---
 
-# 🌐 Endpoints da API (Se houver)
-
-> Estes são modelos genéricos — posso substituir pelos reais quando você quiser.
+# 🌐 Endpoints da API
 
 ### 👇 Endpoints
 
