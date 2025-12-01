@@ -23,10 +23,10 @@ Ele foi projetado com foco em:
 ### 📂 Menu Lateral (Navigation Drawer)
 <img src="screenshots/Captura de tela 2025-12-01 152013.png" width="280"/>
 
-### 🧑‍🎓 Tela de Alunos
+### 🧑‍🎓 Tela de Registro de Perfis (Exemplo)
 <img src="screenshots/Captura de tela 2025-12-01 152020.png" width="280"/>
 
-### 📋 Tela de Cadastros
+### 📋 Tela de Cadastros (Exemplo)
 <img src="screenshots/Captura de tela 2025-12-01 152027.png" width="280"/>
 
 ---
